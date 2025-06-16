@@ -1,0 +1,28 @@
+@import url('https://fonts.googleapis.com/css2?family=Chicle&display=swap');
+
+h1 {
+    font-family: Chicle;
+}
+
+#board-container {
+  display: flex-start;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+#board {
+  display: grid;
+  grid-template-columns: repeat(10, 80px);
+  grid-template-rows: repeat(10, 80px);
+}
+.square {
+  border: 1px solid #999;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 14px;
+  height: 80px;
+  width: 80px;
+  box-sizing: border-box;
+  background: #e0e0e0;
+}
