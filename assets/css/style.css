@@ -26,3 +26,13 @@ h1 {
   box-sizing: border-box;
   background: #e0e0e0;
 }
+
+.player-marker {
+  width: 24px;
+  height: 24px;
+  border-radius: 50%;
+  border: 2px solid #fff;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.2);
+  position: absolute;
+  transition: top 0.2s, left 0.2s;
+}

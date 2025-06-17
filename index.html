@@ -48,12 +48,44 @@
     </div>
   </div>
 </div>
-<!-- Place this inside your <body> -->
+  <div class="container mb-4">
+    <div class="row justify-content-center">
+      <div class="col-md-6 text-center">
+        <form id="player-selection-form" class="p-3 border rounded bg-light">
+          <h4 class="mb-3">Select Number of Players</h4>
+          <div class="mb-3">
+            <select class="form-select" id="num-players" aria-label="Number of Players">
+              <option value="1-player">1 Player (Red)</option>
+              <option value="2-player">2 Players (Red &amp; Blue)</option>
+            </select>
+          </div>
+          <div id="player-colors" class="mb-2">
+            <span id="player1-color" class="badge bg-danger me-2">Player 1: Red</span>
+            <span id="player2-color" class="badge bg-primary">Player 2: Blue</span>
+          </div>
+          <button type="submit" id="start-game" class="btn btn-success">Start Game</button>
+        </form>
+      </div>
+    </div>
+  </div>
 <div class="container mt-4">
-    <div class="row">
-        <div class="col-md-6 mb-3 text-center">
-        <h4>Dice Roll</h4>
-    <!-- Dice roll content goes here -->
+  <div class="row">
+    <div id="dice-roll" class="col-md-6 mb-3 text-center">
+      <h4>Dice Roll</h4>
+      <div id="dice-roll-container">
+        <div class="d-flex justify-content-center align-items-center mb-3">
+          <div id="die1" class="display-4 mx-2 border rounded p-3 bg-white">🎲</div>
+          <div id="die2" class="display-4 mx-2 border rounded p-3 bg-white">🎲</div>
+        </div>
+        <button onclick="rolldice()" id="roll-dice-btn" class="btn btn-primary">Roll Dice</button>
+        <!-- Results Section -->
+        <div class="d-flex justify-content-center mt-4">
+          <div id="dice-result" class="border rounded p-3 bg-light w-75">
+            <h5 class="mb-2">Result</h5>
+            <div id="result-text" class="fw-bold"></div>
+          </div>
+        </div>
+      </div>
     </div>
     <div class="col-md-6 text-center">
         <h4>Board</h4>
